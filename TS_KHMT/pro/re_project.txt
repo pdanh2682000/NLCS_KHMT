@@ -1,0 +1,12 @@
+- icon đhct
+- banner (ảnh bìa) khoa cntt
+- thống kê sinh viên mỗi ngành, trình độ giáo sư, pgs, (tiến sĩ, thạc sĩ chung)
+- thống kê tất cả ngành học, những ngành đào tạo thạc sĩ, tiến sĩ,...
+- thành tựu đạt được
+- cơ sở vật chất
+- thông tin tuyển sinh (đối tượng, hồ sơ, điều kiện, học phí, học bổng)
+- thông báo tình hình chung hiện nay
+- carousel img, video
+- bonus chat box
+
+- https://www.youtube.com/watch?v=-xFJM3QQ3TE 

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tuyển sinh</title>
+    <meta name="description" content="Tuyển sinh Khoa học máy tính đại học Cần Thơ">
+    <meta name="keywords" content="Tuyển sinh, Khoa học máy tính, Đại học Cần Thơ">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="background_font.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="base_tuyensinh.css">
+    <link rel="stylesheet" href="slide.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container-fluid">
+        <div class="row text-header">
+            <div class="col-md-6">
+                <h4 id="khmt"><a href="tel:0335479939   "><span class="glyphicon glyphicon-phone-alt"> (033)5479939
+                        </span></a></h4>
+            </div>
+            <div class="col-md-2">
+                <p class="sign"><a href="#" data-toggle="modal" data-target="#modalDk">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Đăng ký</a></p>
+            </div>
+            <div class="col-md-2">
+                <p class="sign"><a href="#" data-toggle="modal" data-target="#modalDn"><span
+                            class="glyphicon glyphicon-log-in"></span>
+                        Đăng nhập</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 id="language"><a href="#">English</a></h4>
+            </div>
+        </div>
+    </div>
+    <div id="modalDk" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-plus-sign"></span> Đăng ký</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="tk"><span class="glyphicon glyphicon-user"></span>
+                                Tài khoản
+                            </label>
+                            <input type="text" id="tk" class="form-control" placeholder="phan duy anh" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Mật khẩu</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="123456" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Xác nhận mật khẩu</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="123456" required>
+                        </div>
+                        <button type="submit" class="btn btn-block">
+                            Đồng ý<span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-danger pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span>Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalDn" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-plus-sign"></span> Đăng nhập</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="tk"><span class="glyphicon glyphicon-user"></span>
+                                Tài khoản
+                            </label>
+                            <input type="text" id="tk" class="form-control" placeholder="phan duy anh" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Mật khẩu</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="123456" required>
+                        </div>
+                        <button type="submit" class="btn btn-block">
+                            Tiếp tục<span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-danger pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span>Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="img-navbar" src="pro/images/logo1.png" alt="Logo" width="50px" height="50px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myCollapse">
+                <!-- <form id="form-nav" class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-search"></span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    </div>
+                    <button type="submit" class="btn-btn-default btn-info">Search</button>
+                </form> -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="#xt">Xét tuyển</a></li>
+                    <li><a href="#tv">Tư vấn</a></li>
+                    <li><a href="#map">Map</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tìm kiếm
+                            <span class="glyphicon glyphicon-search"></span></a>
+                        <form class="dropdown-menu" action="#">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="font-weight: bold;">Text</span>
+                                <input id="textForm" type="text" class="form-control" name="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container jumbotron">
+        <h3 class="text-center">PHƯƠNG THỨC 1: Xét tuyển điểm Kỳ thi tốt nghiệp THPT năm 2021</h3>
+        <ul>
+            <li>Xét tuyển dựa vào điểm của Kỳ thi tốt nghiệp THPT năm 2021 theo tổ hợp
+                3 môn thi ứng với ngành do thí sinh đăng ký. </li>
+            <li><strong>Ngành xét tuyển:</strong> tất cả các ngành chương trình tiên tiến, chương trình
+                chất lượng cao và chương trình đại trà. Chỉ tiêu xét tuyển: tối thiểu 60% tổng chỉ tiêu của ngành.</li>
+            <li><strong>Đối tượng:</strong> thí sinh tốt nghiệp THPT từ năm 2021 trở về trước.</li>
+            <li><strong>Điều kiện ĐKXT:</strong> Thí sinh đạt ngưỡng đảm bảo chất lượng đầu vào năm 2021 do Trường ĐHCT
+                xác định và không
+                có môn nào từ 1,0 điểm trở xuống (thang điểm 10); riêng môn Năng khiếu TDTT phải đạt từ 5,0 điểm trở
+                lên.</li>
+            <li><strong>Hồ sơ:</strong> theo quy định xét tuyển Đợt 1 của Bộ GD&ĐT</li>
+        </ul>
+    </div>
+
+    <div id="xt" class="container jumbotron slideanim-bottom">
+        <h3 class="text-center">PHƯƠNG THỨC 2: Xét tuyển điểm học bạ THPT</h3>
+        <p>Xét tuyển dựa vào Điểm trung bình môn 5 học kỳ (5 học kỳ: các học kỳ
+            lớp 10, lớp 11 và học kỳ 1 lớp 12) của 3 môn trong tổ hợp xét tuyển ứng
+            với ngành do thí sinh đăng ký. Điểm mỗi môn (gọi là <strong>Điểm M</strong>) để tính điểm
+            xét tuyển được tính bằng trung bình cộng của điểm trung bình môn trong 5 học
+            kỳ (làm tròn đến hai chữ số thập phân), công thức tính <strong>Điểm M</strong> như sau:</p>
+        <img src="pro/images/tinhdiem.png" alt="Tinh diem" class="img-responsive"><br>
+        <em>Trong đó: ĐTBMHK là Điểm trung bình môn học kỳ (HK1L10: Học kỳ 1 Lớp 10)</em>
+        <ul id="listwrap">
+            <li>
+                <a href="#collapse1" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-right"></span>
+                    Ngành
+                    xét tuyển</a>
+                <ul id="collapse1" class="collapse">
+                    <li>Tất cả các ngành chương trình tiên tiến, chương trình chất lượng cao
+                        và chương trình đại trà (trừ các ngành đào tạo giáo viên).
+                        (<mark>Xem Danh mục ngành tuyển sinh đại học chính quy năm 2021</mark>)</li>
+                    <li> Chỉ tiêu xét tuyển: tối đa 40% chỉ tiêu của ngành tương ứng.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#collapse2" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-right"></span> Đối
+                    tượng</a>
+                <ul id="collapse2" class="collapse">
+                    <li>Thí sinh tốt nghiệp THPT từ năm 2021 trở về trước.</li>
+                </ul>
+            </li>
+            <li>
+                <a href="#collapse3" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-right"></span> Điều
+                    kiện ĐKXT</a>
+                <ul id="collapse3" class="collapse">
+                    <li>Tổng điểm 3 môn theo tổ hợp xét tuyển ứng với ngành do
+                        thí sinh đăng ký từ <strong>19,50</strong> điểm trở lên (không cộng điểm ưu tiên).
+                        Công thức như sau:<br>
+                        <strong>Tổng điểm 3 môn</strong> = Điểm M1 + Điểm M2 + Điểm M3 ≥ <strong>19,50</strong>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#collapse4" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-right"></span> Điểm
+                    xét tuyển</a>
+                <ul id="collapse4" class="collapse">
+                    <li>Là tổng điểm 3 môn theo tổ hợp xét tuyển, cộng với điểm ưu tiên
+                        (đối tượng ưu tiên, khu vực ưu tiên quy định của Quy chế tuyển sinh)
+                        Không nhân hệ số và tính theo công thức:<br>
+
+                        <strong>ĐXT</strong> = (Điểm M1 + Điểm M2 + Điểm M3) + Điểm ưu tiên
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#collapse5" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-right"></span> Thời
+                    gian và hồ sơ đăng ký</a>
+                <ul id="collapse5" class="collapse">
+                    <li>Dự kiến từ ngày 01/05/2021 đến hết ngày 15/6/2021</li>
+                    <li><strong>Bước 1:</strong> Đăng ký trực tuyến tại website
+                        <a href="http://xettuyen.ctu.edu.vn">http://xettuyen.ctu.edu.vn</a>
+                        <mark>(để tránh mọi sai sót, thí sinh cần đọc kỹ hướng dẫn trên hệ thống trước khi đăng
+                            ký).</mark>
+                    </li>
+                    <li><strong>Bước 2:</strong> Sau khi đăng ký trực tuyến <strong>và chắc chắn không còn chỉnh
+                            sửa</strong>, thí sinh gửi hồ sơ
+                        về Trường gồm có:<br>
+                        <ul>
+                            <li>Phiếu đăng ký xét tuyển (in từ hệ thống đăng ký trực tuyến của Trường);</li>
+                            <li>01 bản photo Học bạ hoặc bản gốc Bảng kết quả học tập THPT;</li>
+                            <li>Đối với thí sinh đã tốt nghiệp THPT từ năm 2020 trở về trước thì nộp thêm 01 bản photo
+                                Bằng tốt nghiệp THPT;</li>
+                            <li>Phí đăng ký: 30.000đ/ 1 nguyện vọng</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#collapse6" data-toggle="collapse"><span class="glyphicon glyphicon-chevron-right"></span>
+                    Nguyên tắc xét tuyển</a>
+                <ul id="collapse6" class="collapse">
+                    <li>Thí sinh được đăng ký tối đa 05 nguyện vọng và phải xếp theo thứ tự ưu tiên từ cao xuống thấp
+                        (<em>ưu tiên 1 là nguyện vọng cao nhất</em>). Đối với từng ngành, các thí sinh được xét tuyển
+                        bình đẳng
+                        theo điểm xét tuyển và không phân biệt thứ tự ưu tiên. Xét theo điểm từ cao xuống thấp.</li>
+                    <li>Đối với mỗi thí sinh, tất cả các nguyện vọng đều được xét tuyển và chỉ trúng tuyển vào 1 nguyện
+                        vọng có ưu tiên cao nhất trong số các nguyện vọng đủ điều kiện trúng tuyển.</li>
+                    <li>Điểm trúng tuyển giữa các tổ hợp xét tuyển trong cùng 1 ngành là bằng nhau và được xác định theo
+                        ngành. Đây chính là điểm xét tuyển của thí sinh cuối cùng trong danh sách trúng tuyển và gọi là
+                        Điểm chuẩn trúng tuyển của ngành.</li>
+                    <li>Đối với những ngành có chuyên ngành, sau khi trúng tuyển và nhập học theo ngành, thí sinh được
+                        chọn chuyên ngành theo học.</li>
+                </ul>
+            </li>
+        </ul>
+        <!-- form -->
+        <h4 class="text-center">ĐĂNG KÝ XÉT TUYỂN NĂM 2021</h4>
+        <form class="form-horizontal slideanim-bottom" action="#">
+            <h5>THÔNG TIN THÍ SINH</h5>
+            <div class="form-group">
+                <label class="control-label col-md-2" for="name">Họ và tên thí sinh<mark>*</mark></label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Phan Duy Anh" required>
+                </div>
+
+                <label class="control-label col-md-2" for="male">Giới tính<mark>*</mark></label>
+                <div class="col-md-2">
+                    Nam <input type="radio" name="sex" id="male">
+                </div>
+                <div class="col-md-2">
+                    Nữ <input type="radio" name="sex" id="female">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="date">Ngày sinh<mark>*</mark></label>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="date" name="date" required>
+                </div>
+                <label class="control-label col-md-2" for="cmnd">CMND<mark>*</mark></label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="cmnd" name="cmnd" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="dateCmnd">Ngày cấp</label>
+                <div class="col-md-4">
+                    <input type="date" class="form-control" id="dateCmnd" name="dateCmnd">
+                </div>
+                <label class="control-label col-md-2" for="place">Nơi cấp</label>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" id="place" name="place">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="phone">Số điện thoại<mark>*</mark></label>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" id="phone" name="phone" required>
+                </div>
+                <label class="control-label col-md-2" for="email">Email</label>
+                <div class="col-md-4">
+                    <input type="email" class="form-control" id="email" name="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="address">Địa chỉ nhận thư<mark>*</mark></label>
+                <div class="col-md-10">
+                    <input type="text" class="form-control" id="address" name="address" required>
+                </div>
+            </div>
+
+            <h5>THÔNG TIN XÉT TUYỂN</h5>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="level">Bậc đào tạo<mark>*</mark></label>
+                <div class="col-md-4">
+                    <select name="level" id="level" class=" form-control col-md-12">
+                        <option value="null">Chọn bậc đào tạo</option>
+                        <option value="Đại học">Đại học</option>
+                        <option value="Dự bị">Dự bị</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="school">Trường học lớp 12</label>
+                <div class="col-md-4">
+                    <select name="school" id="school" class=" form-control col-md-12">
+                        <option value="null">Chọn trường học lớp 12</option>
+                        <option value="Lê Quý Đôn">THPT Lê Quý Đôn</option>
+                        <option value="Lý Tự Trọng">THPT Lý Tự Trọng</option>
+                    </select>
+                </div>
+                <label class="control-label col-md-2" for="province">Tỉnh học lớp 12</label>
+                <div class="col-md-4">
+                    <select name="province" id="province" class="form-control col-md-12">
+                        <option value="null">Chọn khu vực</option>
+                        <option value="Cần Thơ">Cần Thơ</option>
+                        <option value="Hậu Giang">Hậu Giang</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="area">Khu vực ƯT</label>
+                <div class="col-md-4">
+                    <select name="area" id="area" class=" form-control col-md-12">
+                        <option value="null">Chọn khu vực</option>
+                        <option value="kv1">Khu vực 1</option>
+                        <option value="kv2">Khu vực 2</option>
+                        <option value="kv2_nt">Khu vực 2 nông thôn</option>
+                        <option value="kv3">Khu vực 3</option>
+
+                    </select>
+                </div>
+                <label class="control-label col-md-2" for="obj">Đối tượng ƯT</label>
+                <div class="col-md-4">
+                    <select name="obj" id="obj" class="form-control col-md-12">
+                        <option value="null">Chọn đối tượng</option>
+                        <option value="obj1">Đối tượng 01</option>
+                        <option value="obj2">Đối tượng 02</option>
+                        <option value="obj3">Đối tượng 03</option>
+                        <option value="obj4">Đối tượng 04</option>
+                        <option value="obj5">Đối tượng 05</option>
+                        <option value="obj6">Đối tượng 06</option>
+                        <option value="obj7">Đối tượng 07</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="year">Năm tốt nghiệp</label>
+                <div class="col-md-4">
+                    <input type="number" class="form-control" id="year" name="year" placeholder="2021">
+                </div>
+
+                <label class="control-label col-md-2" for="noneYear">Chưa tốt nghiệp THPT</label>
+                <div class="col-md-2">
+                    <input type="checkbox" name="noneYear" id="nonYear">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="major">Ngành<mark>*</mark></label>
+                <div class="col-md-4">
+                    <select name="major" id="major" class=" form-control col-md-12" required>
+                        <option value="null">Chọn ngành</option>
+                        <option value="khmt">Khoa học máy tính</option>
+                        <option value="mmt">Mạng máy tính</option>
+                        <option value="atbmtt">An toàn bảo mật thông tin</option>
+                        <option value="cntt">Công nghệ thông tin</option>
+                    </select>
+                </div>
+                <label class="control-label col-md-2" for="groupMajor">Tổ hợp môn<mark>*</mark></label>
+                <div class="col-md-4">
+                    <select name="groupMajor" id="groupMajor" class="form-control col-md-12" required>
+                        <option value="null">Chọn tổ hợp môn</option>
+                        <option value="A00">A00</option>
+                        <option value="A01">A01</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="dtb">Điểm trung bình lớp 12</label>
+                <div class="col-md-10">
+                    <input id="dtb" name="dtb" class="form-control" type="number" max="10" min="0">
+                </div>
+            </div>
+
+            <h5>ĐIỂM CẢ NĂM LỚP 12</h5>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="toan">Toán</label>
+                <div class="col-md-2">
+                    <input id="toan" name="toan" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="ly">Lý</label>
+                <div class="col-md-2">
+                    <input id="ly" name="ly" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="hoa">Hóa</label>
+                <div class="col-md-2">
+                    <input id="hoa" name="hoa" class="form-control" type="number" max="10" min="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="av">Anh văn</label>
+                <div class="col-md-2">
+                    <input id="av" name="av" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="nv">Ngữ văn</label>
+                <div class="col-md-2">
+                    <input id="nv" name="nv" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="sh">Sinh học</label>
+                <div class="col-md-2">
+                    <input id="sh" name="sh" class="form-control" type="number" max="10" min="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="ls">Lịch sử</label>
+                <div class="col-md-2">
+                    <input id="ls" name="ls" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="dl">Địa lý</label>
+                <div class="col-md-2">
+                    <input id="dl" name="dl" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="gdcd">Giáo dục công dân</label>
+                <div class="col-md-2">
+                    <input id="gdcd" name="gdcd" class="form-control" type="number" max="10" min="0">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="control-label col-md-2" for="th">Tin học</label>
+                <div class="col-md-2">
+                    <input id="th" name="th" class="form-control" type="number" max="10" min="0">
+                </div>
+
+                <label class="control-label col-md-2" for="cn">Công nghệ</label>
+                <div class="col-md-2">
+                    <input id="cn" name="cn" class="form-control" type="number" max="10" min="0">
+                </div>
+            </div>
+            <em>Lưu ý: Thí sinh nhập điểm vào 3 môn xét tuyển theo tổ hợp đã chọn</em>
+
+            <div class="form-group">
+                <div class="col-md-6" id="submitTs">
+                    <input type="submit" value="Đăng ký" class="btn btn-lg btn-primary">
+                </div>
+                <div class="col-md-6" id="resetTs">
+                    <input type="reset" value="Nhập lại" class="btn btn-lg btn-primary">
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container jumbotron slideanim-bottom">
+        <h3 class="text-center">PHƯƠNG THỨC 3: Tuyển thẳng, ưu tiên xét tuyển</h3>
+        <ul>
+            <li>Tuyển thẳng và ưu tiên xét tuyển vào đại học chính quy các đối tượng
+                được quy định tại Quy chế tuyển sinh trình độ đại học của Bộ GD&ĐT.</li>
+            <li>Hồ sơ: theo quy định của Bộ GD&ĐT</li>
+        </ul>
+    </div>
+
+    <div id="tv" class="container jumbotron slideanim-bottom">
+        <h4 class="text-center">TƯ VẤN ONLINE</h4>
+        <form action="#" class="slideanim-bottom">
+            <div class="form-group">
+                <label for="nameTv">Họ tên:</label>
+                <input type="text" class="form-control" id="nameTv" required>
+            </div>
+            <div class="form-group">
+                <label for="emailTv">Email:</label>
+                <input type="email" class="form-control" id="emailTv" required>
+            </div>
+            <div class="form-group">
+                <label for="score">Nhập tổng điểm của bạn:</label>
+                <input type="text" class="form-control" id="score" placeholder="Tổng điểm 3 môn dự kiến" required>
+            </div>
+            <div class="form-group">
+                <label for="block">Khối thi:</label>
+                <select id="block" name="block" class="form-control" required>
+                    <option value="null">--Khối thi--</option>
+                    <option value="A00">A00 - Toán, Vật lí, Hóa học</option>
+                    <option value="A01">A01 - Toán, Vật lí, Tiếng Anh</option>
+                </select>
+            </div>
+            <em>
+                Lưu ý: Hệ thống sẽ phản hồi đến email của bạn để thông báo thứ hạng và thông báo tỉ lệ cạnh tranh
+                của bạn so với tất cả những người đã đăng ký trước đó!
+            </em>
+            <div class="form-group">
+                <input type="submit" value="Gửi" class="btn btn-lg col-md-2 btn-primary">
+            </div>
+        </form>
+    </div>
+
+    <div class="container jumbotron" id="map">
+        <h2>Khoa Học Máy Tính Đại Học Cần Thơ Ở Đâu?</h2>
+        <iframe
+            class="slideanim-bottom"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.829932294841!2d105.7668131142822!3d10.030888975255081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a0883d2192b0f1%3A0x4c90a391d232ccce!2zS2hvYSBDw7RuZyBOZ2jhu4cgVGjDtG5nIFRpbiB2w6AgVHJ1eeG7gW4gVGjDtG5nIChDVFUp!5e0!3m2!1svi!2s!4v1616210601811!5m2!1svi!2s"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="jumbotron container-fluid" id="footer">
+        <div class="row">
+            <div class="col-xs-6">
+                <h5>TUYỂN SINH KHOA HỌC MÁY TÍNH TRƯỜNG ĐẠI HỌC CẦN THƠ</h5>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Khu II, Đ. 3/2, Xuân Khánh, Ninh Kiều, Cần Thơ
+                </p>
+                <p><span class="glyphicon glyphicon-phone"></span> Điện thoại (Me) (+84) 335479939</p>
+                <p><span class="glyphicon glyphicon-envelope"> </span> pdanh2682000@gmail.com</p>
+                <p><a href="https://www.facebook.com/kio.phan.92" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                        </svg>
+                        Facebook Me
+                    </a></p>
+                <p><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 16 16">
+                            <path
+                                d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                        </svg>
+                        Twitter KHMT
+                    </a></p>
+                <p> <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                        </svg>
+                        Instagram KHMT
+                    </a></p>
+                <p><a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path
+                                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.122C.002 7.343.01 6.6.064 5.78l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+                        </svg>
+                        Youtube KHMT
+                    </a></p>
+            </div>
+            <div class="col-xs-6">
+                <iframe
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fdoankhoacntt.ctu&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                    allowfullscreen="true"
+                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="slide.js"></script>
+    <script src="smooth_click.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,394 @@
+
+/* Grow */
+
+.head-tt {
+    text-align: center;
+    color: #F26F21;
+    padding: 30px;
+}
+
+.para-tt {
+    font-size: 1em;
+    word-spacing: 4px;
+    padding: 10px;
+}
+
+.bg-pink {
+    margin-top: 30px;
+    background-color: #FFEDDB;
+    height: 650px;
+    border-radius: 20px;
+}
+
+
+.wrap {
+    margin-top: 30px;
+}
+
+.bg-tt {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .scroll-bar {
+        float: left;
+        height: 300px;
+        margin-bottom: 25px;
+        margin-left: 22px;
+        overflow-y: scroll;
+    }
+
+    ul.scroll-bar, div.scroll-bar {
+        float: left;
+        height: 500px;
+        margin-bottom: 25px;
+        margin-left: 22px;
+        overflow-y: scroll;
+    }
+
+    .scroll-bar::-webkit-scrollbar {
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+
+    .scroll-bar::-webkit-scrollbar-thumb {
+        background-color: #F7BD9B;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+   .wrap {
+       margin-top: 0;
+   }
+
+   #respon {
+       padding-top: 0;
+   }
+
+   .bg-pink {
+       height: auto;
+       padding-bottom: 10px;
+   }
+}
+
+/* Slideshow */
+
+.carousel-inner img {
+    width: 50%;
+    margin: auto;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    /* xóa background mặc định của 2 nút previous/next*/
+    color: #f4511e;
+}
+
+.carousel-indicators li {
+    border-color: #3a3230;
+    /* tạo đường viền của nút tròn*/
+}
+
+.carousel-indicators li.active {
+    background-color: #3a3230;
+    /* tô màu nút tròn*/
+}
+
+.carousel-caption h3 {
+    color: #000;
+}
+
+#myCarousel {
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+@media screen and (max-width: 992px){
+    .carousel-caption {
+        display: none;
+    }
+
+    .hide-md {
+        visibility: hidden !important;
+    }
+}
+
+/* Question % CTU */
+
+#question-header {
+    text-align: center;
+    padding: 30px;
+    color: #FFFFFF;
+}
+
+.bg-orange {
+    background-color: #F37528;
+}
+
+div.logo-small {
+    color: #FFFFFF;
+    font-size: 3.125em;
+    border: 2px dashed #fff;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.logo {
+    text-align: center;
+    color: #F0D3DF;
+    padding: 20px;
+}
+
+.logo p {
+    font-size: 1.125em;
+}
+
+@media only screen and (max-width: 992px) {
+    .logo {
+        border-bottom: 1px solid #fff;
+    }
+}
+
+/* Lộ trình  */
+.bg-grey {
+    background-color:#FFEDDB;
+}
+
+.lt-head {
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.align-step {
+    text-align: center;
+    padding: 10px;
+}
+
+.align-step h3 {
+    font-weight: 600;
+}
+
+.align-step p {
+    color: #9080A0;
+    font-size: 1em;
+}
+
+.img-step {
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .center-div {
+        margin: auto;
+        text-align: center;
+        border-bottom: 1px solid red;
+    }
+
+    .img-step {
+        margin-bottom: 0px;
+    }
+
+    .align-step {
+        padding: 0px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .align-step p {
+        font-size: 0.875em;
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    .align-step h3 {
+        font-size: 1em;
+        padding-left: 30px;
+    }
+}
+
+#dt-col2 ul li {
+    padding: 10px;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+
+/*  Table HK */
+
+table, th, td {
+    border-top: 1px solid #F7BD9B;
+    border-bottom: 1px solid #F7BD9B;
+    border-left: 1px solid #F7BD9B;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#table-hk {
+    background-color: #fff;
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+#table-hk thead {
+    background-color: #F26F21;
+}
+
+#table-hk thead tr th {
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    vertical-align: middle;
+}
+
+#table-hk tbody tr td {
+    vertical-align: middle;
+}
+
+.head-table {
+    text-align: center;
+    font-weight: bold;
+}
+
+#header-table {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+}
+
+/* Question KHMT */
+
+.media-body {
+    background-color: #F7BD9B;
+    height: 380px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.media-heading {
+    font-weight: bold;
+}
+
+.color-light {
+    color: #461a8de3;
+}
+
+.bg-white {
+    background-color: #fff;
+    padding: 20px;
+}
+
+#head-question {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 992px){
+    .media-body {
+        height: auto;
+    }
+
+    .media {
+        margin-bottom: 10px;
+    }
+}
+
+/* thumbnail */
+
+#thumb {
+    background-color:#FFEDDB;
+    margin: auto;
+}
+
+
+#thumb h2 {
+    padding: 10px;
+    color:#f4511e;
+}
+
+.thumbnail {
+    margin-top: 20px;
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+    transition: 0.5s box-shadow;
+}
+
+.thumbnail:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0,1);
+    font-weight: bold;
+}
+
+.thumbnail p {
+    margin-top: 15px;
+    color: #555;
+  }
+
+/* Form */
+
+#info {
+    width: 400px;
+    margin: auto;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+#contact {
+    background-color: #F26F21;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 50px;
+    padding: 30px;
+}
+
+#contact h2 {
+    font-weight: bold;
+    color: #fff;
+}
+
+#btnSubmit {
+    padding-top: 10px;
+}
+
+#btnSubmit button {
+    border-radius: 30px;
+    width: 40%;
+}
+
+@media only screen and (max-width: 992px) {
+    #info {
+        padding-top: 0;
+        padding-bottom: 10px;
+    }
+}
+
+.bg-light_orange {
+    background-color: #CE5E1C;
+    border: none;
+    color: #fff;
+}
+
+/* footer {
+    background-color: #DCDCDC;
+    margin-bottom: 0;
+    padding-bottom: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+

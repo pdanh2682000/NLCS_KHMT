@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trang chủ</title>
+    <meta name="description" content="tuyển sinh, khoa học máy tính, đại học cần thơ">
+    <meta name="keywords" content="KHMT, CTU">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="base.css"> -->
+    <link rel="stylesheet" href="background_font.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="base_index.css">
+    <link rel="stylesheet" href="slide.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+</head>
+
+<body id="myPage">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <div class="container-fluid">
+        <div class="row text-header">
+            <div class="col-md-6">
+                <h4 id="khmt"><a href="#">Khoa Học Máy Tính</a></h4>
+            </div>
+            <div class="col-md-2">
+                <p class="sign"><a href="#" data-toggle="modal" data-target="#modalDk">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Đăng ký</a></p>
+            </div>
+            <div class="col-md-2">
+                <p class="sign"><a href="#" data-toggle="modal" data-target="#modalDn"><span
+                            class="glyphicon glyphicon-log-in"></span>
+                        Đăng nhập</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 id="language"><a href="#">English</a></h4>
+            </div>
+        </div>
+    </div>
+    <div id="modalDk" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-plus-sign"></span> Đăng ký</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="tk"><span class="glyphicon glyphicon-user"></span>
+                                Tài khoản
+                            </label>
+                            <input type="text" id="tk" class="form-control" placeholder="phan duy anh" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Mật khẩu</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="123456" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Xác nhận mật khẩu</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="123456" required>
+                        </div>
+                        <button type="submit" class="btn btn-block">
+                            Đồng ý<span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-danger pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span>Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modalDn" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4><span class="glyphicon glyphicon-plus-sign"></span> Đăng nhập</h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="tk"><span class="glyphicon glyphicon-user"></span>
+                                Tài khoản
+                            </label>
+                            <input type="text" id="tk" class="form-control" placeholder="phan duy anh" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd"><span class="glyphicon glyphicon-lock"></span>Mật khẩu</label>
+                            <input type="password" id="pwd" class="form-control" placeholder="123456" required>
+                        </div>
+                        <button type="submit" class="btn btn-block">
+                            Tiếp tục<span class="glyphicon glyphicon-ok"></span>
+                        </button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default btn-danger pull-left" data-dismiss="modal">
+                        <span class="glyphicon glyphicon-remove"></span>Cancel
+                    </button>
+                    <p>Need <a href="#">help?</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myCollapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="img-navbar" src="pro/images/logo1.png" alt="Logo" width="50px" height="50px">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myCollapse">
+                <!-- <form id="form-nav" class="navbar-form navbar-right">
+                    <div class="input-group">
+                        <span class="input-group-addon glyphicon glyphicon-search"></span>
+                        <input type="text" class="form-control" placeholder="Tìm kiếm">
+                    </div>
+                    <button type="submit" class="btn-btn-default btn-info">Search</button>
+                </form> -->
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="index.html">Trang chủ</a></li>
+                    <li><a href="tuyensinh.html" target="_blank">Tuyển sinh</a></li>
+                    <li><a href="sukien.html" target="_blank">Sự kiện</a></li>
+                    <li><a href="nghiencuu.html" target="_blank">Nghiên cứu</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tìm kiếm
+                            <span class="glyphicon glyphicon-search"></span></a>
+                        <form class="dropdown-menu" action="#">
+                            <div class="input-group">
+                                <span class="input-group-addon" style="font-weight: bold;">Text</span>
+                                <input id="textForm" type="text" class="form-control" name="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <img src="pro/images/cntt2.jpg" width="100%" height="auto" class="img-responsive" alt="Khoa CNTT CTU" id="home">
+    <div class="container bg-tt">
+        <div class="row">
+            <div class="col-md-6 wrap slideanim-bottom">
+                <h2 class="head-tt" id="respon">TRIỂN VỌNG NGHỀ NGHIỆP</h2>
+                <div class="scroll-bar">
+                    <p class="para-tt">Khoa học máy tính là ngành học ngày càng thu hút được sự quan tâm, chú ý từ cộng
+                        đồng các nhà khoa
+                        học trong nước và quốc tế, từ các bạn học sinh, sinh viên yêu thích khám phá những điều mới mẻ.
+                        Trên thế giới, cuộc chạy đua của các đế chế khổng lồ như Facebook, Google, Microsoft… đang tạo
+                        ra cơn khát lực lượng chuyên môn cao về AI.
+                    </p>
+                    <p class="para-tt">
+                        Sinh viên AI được vô số tập đoàn săn đón với dự án triệu $ kèm lời mời có mức lương khủng từ năm
+                        nhất đại học. Theo thống kê Tại Việt Nam với 140 chương trình đào tạo đại học về công nghệ thông
+                        tin có 57 chương trình liên quan đến trí tuệ nhân tạo. Ở Việt Nam hiện nay, mức lương dành cho
+                        vị trí kỹ sư về AI có thể lên đến 500 triệu đồng/năm. Dự báo cho rằng từ 5 đến 10 năm nữa, ngành
+                        khoa học này sẽ phát triển lên tới đỉnh cao.
+                    </p>
+                    <p class="para-tt">
+                        Theo khảo sát của Teradata (2017), 80% doanh nghiệp đã đưa AI vào vận hành thực tế. 30% sẽ mở
+                        rộng
+                        đầu tư vào AI trong 36 tháng tới ; 72% cần thêm nhân lực để phát triển hoặc triển khai AI ; Các
+                        hoạt động được đầu tư AI nhiều nhất: customer experience (62%), R&D (59%), operations (55%).
+                        Trong
+                        tương lai, trí tuệ nhân tạo với sự quan tâm và phát triển của các ông lớn trong ngành công nghệ,
+                        dự kiến sẽ mở rộng hơn nữa phạm vi ứng dụng sang các lĩnh vực như: Y tế, Xây dựng, Ngân hàng,
+                        Công nghệ siêu vi…
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 bg-pink">
+                <h2 class="head-tt">HỌC NGÀNH NÀY - LÀM NGHỀ GÌ?</h2>
+                <ul>
+                    <li class="para-tt">Kỹ sư phát triển ứng dụng AI</li>
+                    <li class="para-tt">Kỹ sư phát triển hệ thống tự động hóa, robot</li>
+                    <li class="para-tt">Kiến trúc sư dữ liệu, chuyên viên phân tích dữ liệu</li>
+                    <li class="para-tt">Nghiên cứu chuyên sâu về trí tuệ nhân tạo</li>
+                    <li class="para-tt">Ứng dụng trí tuệ nhân tạo trong các tổ chức, doanh nghiệp</li>
+                    <li class="para-tt">Kỹ sư hệ thống.</li>
+                    <li class="para-tt">Nhà phát triển Mainframe</li>
+                    <li class="para-tt">Chuyên viên đảm bảo chất lượng phần mềm</li>
+                    <li class="para-tt">Kỹ sư ứng dụng</li>
+                    <li class="para-tt">Trưởng phòng Công nghệ (CTO)</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="carousel slide" id="myCarousel" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" class="active" data-slide-to="0"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner">
+            <div class="item active">
+                <img src="pro/images/kysu_AI.jpg" alt="Kỹ sư AI" width="800px" height="449px" class="img-rounded">
+                <div class="carousel-caption">
+                    <h3>Kỹ Sư AI</h3>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="pro/images/phantich.jpg" alt="Phân tích dữ liệu" width="800px" height="449px"
+                    class="img-rounded">
+                <div class="carousel-caption">
+                    <h3>Phân Tích Dữ Liệu</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="pro/images/tudonghoa.png" alt="Tự động hóa" width="800px" height="449px" class="img-rounded">
+                <div class="carousel-caption">
+                    <h3> Kĩ Sư Tự Động Hóa</h3>
+                </div>
+            </div>
+            <div class="item">
+                <img src="pro/images/ai.jpg" alt="Máy học" width="800px" height="449px" class="img-rounded">
+                <div class="carousel-caption">
+                    <h3>Máy Học</h3>
+                </div>
+            </div>
+        </div>
+
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"> <span class="hide-md">Khoa Học Máy Tính</span></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"><span class="hide-md"> Đại Học Cần Thơ</span></span>
+            <span class="sr-only">Previous</span>
+        </a>
+    </div>
+    <div class="container-fluid bg-orange slide">
+        <h1 id="question-header">VÌ SAO <strong>SINH VIÊN</strong> NÊN CHỌN <strong>ĐHCT?</strong></h1>
+        <div class="row">
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-bell logo-small"></div>
+                <h1>99%</h1>
+                <p>Sinh viên được nhà tuyển dụng chào đón</p>
+            </div>
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-flash logo-small"></div>
+                <h1>80%</h1>
+                <p>Sinh viên được học tập bằng tiếng Anh</p>
+            </div>
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-send logo-small"></div>
+                <h1>100%</h1>
+                <p>Sinh viên được trải nghiệm với thực tập thực tế</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-tower logo-small"></div>
+                <h1>19%</h1>
+                <p>Cựu sinh viên làm việc tại nước ngoài</p>
+            </div>
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-briefcase logo-small"></div>
+                <h1>10%</h1>
+                <p>Cựu sinh viên trở thành lãnh đạo, quản lý</p>
+            </div>
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-equalizer logo-small"></div>
+                <h1>5%</h1>
+                <p>Sinh viên khởi nghiệp ngay từ khi còn đi học</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-education logo-small"></div>
+                <h1>100%</h1>
+                <p>Giảng viên trình độ thạc sĩ</p>
+            </div>
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-education logo-small"></div>
+                <h1>34%</h1>
+                <p>Giảng viên trình độ tiến sĩ</p>
+            </div>
+            <div class="col-md-4 logo slideanim-bottom">
+                <div class="glyphicon glyphicon-education logo-small"></div>
+                <h1>12%</h1>
+                <p>Giảng viên trình độ tiên sĩ trở lên</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-grey">
+                <h2 class="lt-head">LỘ TRÌNH ĐÀO TẠO</h2>
+                <div class="row center-div slideanim-bottom">
+                    <div class="col-md-6">
+                        <img src="pro/images/step1.png" alt="Step 1" class="img-step">
+                    </div>
+                    <div class="col-md-6 align-step">
+                        <h3>GIAI ĐOẠN 01</h3>
+                        <p>Nền tảng, đại cương</p>
+                    </div>
+                </div>
+                <div class="row center-div slideanim-bottom">
+                    <div class="col-md-6">
+                        <img src="pro/images/step2.png" alt="Step 2" class="img-step">
+                    </div>
+                    <div class="col-md-6 align-step">
+                        <h3>GIAI ĐOẠN 02</h3>
+                        <p>Kiến thức cở sở</p>
+                    </div>
+                </div>
+                <div class="row center-div slideanim-bottom">
+                    <div class="col-md-6">
+                        <img src="pro/images/step3.png" alt="Step 3" class="img-step">
+                    </div>
+                    <div class="col-md-6 align-step">
+                        <h3>GIAI ĐOẠN 03</h3>
+                        <p>Thực tập thực tế</p>
+                    </div>
+                </div>
+                <div class="row center-div slideanim-bottom">
+                    <div class="col-md-6">
+                        <img src="pro/images/step4.png" alt="Step 3" class="img-step">
+                    </div>
+                    <div class="col-md-6 align-step">
+                        <h3>GIAI ĐOẠN 04</h3>
+                        <p>Đồ án tốt nghiệp</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6" id="dt-col2">
+                <h2 class="lt-head">ĐÀO TẠO KHÁC BIỆT</h2>
+                <ul class="scroll-bar">
+                    <li>Sinh viên học tập với giáo trình bằng tiếng Anh và tiếng Việt,
+                        bản quyền quốc tế, được nhập khẩu trực tiếp từ các nhà xuất bản danh tiếng trên thế giới.</li>
+                    <li>Bên cạnh tiếng Anh, sinh viên được đào tạo song song ngoại ngữ tùy chọn.</li>
+                    <li>Chương trình đào tạo ngành Công nghệ Thông tin được thiết kế theo chuẩn AMC của Hiệp hội Máy
+                        tính (Association for Computing Machinery), chuẩn đào tạo kỹ sư phần mềm ABET của Accreditation
+                        Board for Engineering and Technology, Mỹ và Hiệp hội Phần mềm Việt Nam (VINASA). </li>
+                    <li>Sinh viên có thể có 1 – 2 học kỳ học tập chuyên ngành, làm việc tại nhiều công ty do trường
+                        liên kết để tạo điều kiện cho sinh viên ứng dụng học tập vào thực tế.
+                    </li>
+                    <li>Sinh viên có phương pháp học đại học hiệu quả như: tự học, làm việc nhóm, quản lý thời gian, tối
+                        ưu hoá năng lực não bộ cải thiện kết quả học tập.</li>
+                    <li>Sinh viên đạt trình độ tiếng Anh tương đương IELTS 6.0 hoặc TOEFL iBT 80.</li>
+                    <li>Sinh viên tự tin đọc hiểu giáo trình, học tập bằng tiếng Anh, giao tiếp thông thạo
+                        với giảng viên và sinh viên quốc tế.</li>
+                    <li>Sinh viên có tinh thần rèn luyện thể chất, phát triển cá nhân toàn diện.</li>
+                    <li>Sinh viên được trang bị tư duy về lập trình một cách trực quan.</li>
+                    <li>Sinh viên được trang bị kỹ năng mềm như hoạt động phong trào, tự tin trong giao tiếp, tự tin
+                        trong phỏng vấn, báo cáo.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-white">
+        <h1 id="header-table">CHƯƠNG TRÌNH ĐÀO TẠO</h1>
+        <div class="table-responsive scroll-bar">
+            <table class="table table-striped table-responsive" id="table-hk">
+                <thead>
+                    <tr>
+                        <th>HỌC KỲ</th>
+                        <th>HỌC PHẦN</th>
+                        <th>KỸ NĂNG ĐẠT ĐƯỢC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="head-table">NỀN TẢNG</td>
+                        <td>
+                            <ul>
+                                <li>Tuần lễ định hướng</li>
+                                <li>Tháng rèn luyện tập trung</li>
+                                <li>Tiếng Anh nền tảng</li>
+                                <li>Có thể có học kỳ tiếng Anh ở nước ngoài, chi phí phát sinh phụ thuộc vào trường và
+                                    quốc gia cụ thể</li>
+                                <li>Giáo dục thể chất</li>
+                                <li>Giáo dục quốc phòng</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên có phương pháp học đại học hiệu quả như: tự học, làm việc nhóm, quản lý
+                                    thời
+                                    gian, tối ưu hoá năng lực não bộ cải thiện kết quả học tập.</li>
+                                <li>Sinh viên đạt trình độ tiếng Anh tương đương IELTS 6.0 hoặc TOEFL iBT 80.</li>
+                                <li>Sinh viên tự tin đọc hiểu giáo trình, học tập hoàn toàn bằng tiếng Anh, giao tiếp
+                                    thông thạo với giảng viên và sinh viên quốc tế.</li>
+                                <li>Sinh viên có tinh thần rèn luyện thể chất, phát triển cá nhân toàn diện.</li>
+                                <li>Sinh viên được rèn luyện tinh thần như ở trong quân đội</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KÌ 1</td>
+                        <td>
+                            <ul>
+                                <li>Nhập môn tính toán</li>
+                                <li>Kỹ năng làm việc nhóm</li>
+                                <li>Toán cho ngành kỹ thuật</li>
+                                <li>Cơ sở lập trình (với C)</li>
+                                <li>Tổ chức và kiến trúc máy tính</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên làm quen với ngôn ngữ C, lập trình những chương trình cơ bản đến phức tạp.
+                                </li>
+                                <li>Sinh viên hiểu về kiến trúc và tổ chức máy tính</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KÌ 2</td>
+                        <td>
+                            <ul>
+                                <li>Kỹ năng làm việc nhóm</li>
+                                <li>Thiết kế Web</li>
+                                <li>Toán rời rạc</li>
+                                <li>Thực hành C</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Làm việc nhóm: Sinh viên học cách làm việc nhóm hiệu quả, phát triển nhóm,
+                                    thành viên nhóm, đa dạng nhóm, lãnh đạo nhóm, động lực nhóm, mâu thuẫn và gắn kết
+                                    trong các nhóm, lập kế hoạch và tổ chức các cuộc họp và công nghệ và các nhóm ảo.
+                                </li>
+                                <li>Sinh viên có khả năng thiết kế giao diện của một website.</li>
+                                <li>Sinh viên học cách giao tiếp cơ bản với hệ cơ sở dữ liệu, thiết kế Database.</li>
+                                <li>Sinh viên thực hành lập trình ngôn ngữ C.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KÌ 3</td>
+                        <td>
+                            <ul>
+                                <li>Các hệ cơ sở dữ liệu</li>
+                                <li>Lập trình hướng đối tượng</li>
+                                <li>Cấu trúc dữ liệu và giải thuật</li>
+                                <li>Thực hành OOP với Java</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên nắm vững quy trình phát triển phần mềm, bao gồm các quy trình sử dụng
+                                    trong
+                                    ngành công nghệ phần mềm: Water Fall, Spiral, Interative Development, Agile.</li>
+                                <li>Sinh viên có kiến thức về lập trình hướng đối tượng và giao tiếp cơ bản.</li>
+                                <li>Sinh viên sử dụng thông thạo ngôn ngữ thiết kế phần mền UML.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KỲ 4</td>
+                        <td>
+                            <ul>
+                                <li>Lý thuyết trong CNTT</li>
+                                <li>Giải thuật nâng cao</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên có kiến thức về phân chia và chinh phục & đệ quy trong thuật toán;
+                                    thân tích xác suất và thuật toán ngẫu nhiên, thuật toán đa luồng, lập trình
+                                    tuyến tính…</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KỲ 5</td>
+                        <td>
+                            <ul>
+                                <li>Niên luận cơ sở ngành</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên làm việc trong các dự án thực tế để áp dụng kiến thức đã học vào thực tế
+                                </li>
+                                <li>Sinh viên xác định các mô hình, các mẫu phù hợp, sự phối hợp giữa các mô hình nhằm
+                                    tương thích với nội dung mục đích và yêu cầu của người sử dụng về phần mềm.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KỲ 6</td>
+                        <td>
+                            <ul>
+                                <li>Trí tuệ nhân tạo</li>
+                                <li>Đồ hoạ máy tính</li>
+                                <li>CNTT tự chọn 1 (Ngôn ngữ lập trình)</li>
+                                <li>Tối ưu hoá tổ hợp</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên biết được phương pháp tính toán của trí tuệ nhân tạo,
+                                    nghiên cứu robot, xử lý ngôn ngữ tự nhiên, xử lý hình ảnh…</li>
+                                <li>Sinh viên sử dụng thông thạo ngôn ngữ lập trình mà mình lựa chọn học</li>
+                                <li>Sinh viên nắm được kỹ thuật lập trình tuyến tính và các thuật toán lý thuyết đồ thị
+                                    cơ bản…</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KỲ 7</td>
+                        <td>
+                            <ul>
+                                <li>Lập trình hệ thống</li>
+                                <li>CNTT tự chọn 2 (học máy)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên viết được những phần mềm cho hệ thống.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="head-table">HỌC KỲ 8</td>
+                        <td>
+                            <ul>
+                                <li>Khoá luận tốt nghiệp</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Sinh viên thực hiện và sở hữu đồ án/ứng dụng của riêng mình.</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container row text-center" id="thumb">
+        <h2>Văn phòng làm việc phục vụ ngành KHMT</h2>
+        <div class="col-md-4">
+            <div class="thumbnail slideanim-bottom">
+                <img src="pro/images/khmt.jpg" alt="KHMT">
+                <h4><strong>Working</strong></h4>
+                <p>Văn phòng làm việc KHMT</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail slideanim-bottom">
+                <img src="pro/images/space.jpg" alt="idea">
+                <h4><strong>Creation</strong></h4>
+                <p>Phòng sáng tạo</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="thumbnail slideanim-bottom">
+                <img src="pro/images/teamwork.jpg" alt="teamwork">
+                <h4><strong>Meeting</strong></h4>
+                <p>Phòng hợp trình bày</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Media Object -->
+    <div class="container bg-white">
+        <h3 id="head-question">VÌ SAO NÊN CHỌN NGÀNH <strong>KHOA HỌC MÁY TÍNH</strong> TẠI <strong>ĐHCT?</strong></h3>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="media slideanim-bottom">
+                    <div class="media-left media-middle">
+                        <img src="pro/images/avt1.jpg" class="media-object img-circle" style="width: 150px;"
+                            alt="Avartar 1">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">LƯƠNG THỊ THẢO NHI</h4>
+                        <p class="color-light">Nhân viên kiểm thử cấp cao Công ty TNHH Synergix Technologies Việt Nam
+                        </p>
+                        <p>"Trong chương trình giao lưu trao đổi ở Nhật, mình được đi tham quan thực tế
+                            ở nhiều công ty/tập đoàn lớn như Panasonic, Sharp… Qua đó thấy được sự phát
+                            triển vượt bậc về công nghệ của nước ngoài. Ngoài ra mình được chia sẻ những
+                            câu chuyện thành công, những bài học về quy trình làm việc và tinh thần làm
+                            việc của người Nhật. Đến khi về lại trường và cả sau này làm việc ở công ty hiện tại,
+                            mình đều cố gắng áp dụng những..."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="media slideanim-bottom">
+                    <div class="media-left media-middle">
+                        <img src="pro/images/avt3.jpg" class="media-object img-circle" style="width:150px"
+                            alt="Avartar 2">
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">PHAN DUY ANH</h4>
+                        <p class="color-light">Sinh viên năm 3</p>
+                        <p>“Sinh viên CTU luôn có một cái chất riêng nào đó khác biệt với trường ngoài, đó là
+                            tinh thần kiên cường mà không phải ai cũng có thể quật ngã được, sự tự tin để làm
+                            những điều mình muốn. Điều đó sinh viên được rèn luyện, trưởng thành khi tham gia
+                            các CLB, các chương trình ngoại khóa, lớp học kĩ năng trong trường.”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="container contact" style="background-color: #FFEDDB;">
+        <h2 class="text-center" style="padding-top: 20px;">BẠN ĐÃ <strong>SẴN SÀNG</strong> ĐỂ TRỞ THÀNH SINH VIÊN
+            <strong>ĐẠI HỌC CTU?</strong>
+        </h2></br></br>
+        <div class="row">
+            <div class="col-md-6 text-left slideanim-bottom">
+                <div id="info">
+                    <strong>Chúng tôi sẽ liên hệ lại với bạn trong vòng 24h</strong><br><br>
+                    <p><span class="glyphicon glyphicon-map-marker"></span> Cần Thơ, Việt Nam</p>
+                    <p><span class="glyphicon glyphicon-phone"></span> +0831234567</p>
+                    <p><span class="glyphicon glyphicon-envelope"> Pdanh2682000@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="col-md-6 slideanim-bottom" id="contact">
+                <h2 class="text-center">Liên Hệ</h2>
+                <form action="#">
+                    <div class="row">
+                        <div class="col-md-12 form-group">
+                            <label for="idText">Họ Và Tên*</label>
+                            <input type="text" id="idText" name="text" placeholder="Phan Duy Anh"
+                                class="form-control bg-light_orange" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="idPhone">Số điện thoại*</label>
+                            <input type="text" id="idPhone" name="phone" placeholder="0335479xxx"
+                                class="form-control bg-light_orange" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="idDate">Ngày sinh*</label>
+                            <input type="date" id="idDate" name="date" placeholder="26/08/2000"
+                                class="form-control bg-light_orange" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="idEmail">Email*</label>
+                            <input type="email" id="idEmail" name="email" placeholder="abc@gmail.com"
+                                class="form-control bg-light_orange" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="idProvince">Tỉnh thành*</label>
+                            <select id="idProvince" name="selectProvince" class="form-control bg-light_orange" required>
+                                <option value="null">--- Chọn ---</option>
+                                <option value="Cần Thơ">Cần Thơ</option>
+                                <option value="Hậu Giang">Hậu Giang</option>
+                                <option value="Bạc Liêu">Bạc Liêu</option>
+                                <option value="Cà Mau">Cà Mau</option>
+                                <option value="Sóc Trăng">Sóc Trăng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="idSchool">Trường</label>
+                            <input type="text" id="idSchool" name="school" placeholder="THPT Lê Quý Đôn"
+                                class="form-control bg-light_orange" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="idMajor">Chuyên ngành*</label>
+                            <select id="idMajor" name="selectMajor" class="form-control bg-light_orange" required>
+                                <option value="null">--- Chọn ---</option>
+                                <option value="CNTT">Công nghệ thông tin</option>
+                                <option value="KHMT">Khoa học máy tính</option>
+                                <option value="MMT">Mạng máy tính</option>
+                                <option value="HTTT">Hệ thống thông tin</option>
+                                <option value="THUD">Tin học ứng dụng</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center" id="btnSubmit">
+                            <button type="submit" class="btn btn-lg btn-primary">Đăng ký</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <img src="pro/images/dhct.jpg" width="100%" height="auto" alt="DHCT" class="img-responsive">
+    <footer class="container-fluild text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up" style="font-size: 30px;"></span>
+        </a>
+        <h4>Về đầu trang</h4>
+    </footer>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="slide.js"></script>
+    <script src="smooth_click.js"></script>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function () {
+            FB.init({
+                xfbml: true,
+                version: 'v10.0'
+            });
+        };
+
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="106339398204066" theme_color="#13cf13"
+        logged_in_greeting="Hello my name is Danh Uy" logged_out_greeting="Hello my name is Danh Uy">
+    </div>
+</body>
+
+</html>

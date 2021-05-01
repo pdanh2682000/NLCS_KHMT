@@ -1,0 +1,185 @@
+body {
+    /* background-color: #DCDCDC; */
+    /* background-color: #F26F21; */
+    /* background-color: #F6F6F6 ; */
+    /* background-repeat: no-repeat; */
+    background-size: 100% auto;
+    font-family: Lato, sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: var(--color-white);
+    margin: 0;
+}
+
+
+/* Image Banner */
+
+#wrap {
+    position: relative;
+    padding: 0;
+}
+
+#wrap img {
+    filter: brightness(.6);
+}
+
+#content {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+#content h1 {
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    #content h1 {
+        font-size: 1.8em;
+    }
+} 
+
+/* Carousel */
+
+.carousel img {
+    margin: auto;
+}
+
+.carousel-control.right,
+.carousel-control.left {
+    background-image: none;
+    /* xóa background mặc định của 2 nút previous/next*/
+    color: #f4511e;
+}
+
+.carousel-indicators li {
+    border-color: #3a3230;
+    /* tạo đường viền của nút tròn*/
+}
+
+#myCarousel {
+    padding: 20px;
+    background-color: rgb(245, 245, 245);
+}
+
+/* News */
+
+strong {
+    color: #000;
+}
+
+
+#news {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+#news img {
+    width: 500px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+}
+
+.thumbnail p {
+    color: #a8acc2;
+}
+
+.thumbnail a:hover{
+    text-decoration: none;
+}
+
+.thumbnail a:hover p strong{
+    color: #F05123;
+}
+
+.thumbnail a img {
+    transition: 0.5s filter;
+}
+
+.thumbnail a:hover img{
+    filter: opacity(0.7);
+}
+
+#eventNew h3 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#eventNew .row {
+    margin-bottom: 60px;
+    padding: 10px;
+}
+
+.date {
+    margin: auto;
+    background-color: #CD2122;
+    width: 100px;
+    color: #fff;
+}
+
+.line {
+    border-bottom: 2px solid #fff;  
+}
+
+.text-left {
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+@media only screen and (max-width: 992px) {
+    #eventNew {
+        text-align: center;
+    }
+    
+    #eventNew h3 {
+        margin-bottom: 0;
+    }
+
+    #eventNew .row {
+        margin-bottom: 0;
+    }
+
+    .text-left {
+        text-align: center;
+    }
+}
+
+/* footer */
+
+footer {
+    padding-top: 10px;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 20px
+}
+
+footer p {
+    color: #000;
+    font-weight: 500;
+}
+
+footer h5 {
+    color: #000;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+footer a {
+    color: #A80000;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
